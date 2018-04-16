@@ -14,10 +14,13 @@ class FirstActivity : AppCompatActivity() {
         //ボタンを取得
         var button: Button = findViewById(R.id.move_button)
 
+        //クリックイベントの実装
         button.setOnClickListener{
 
-            //新しいActivityを起動する
+            //SecondActivityへのIntentを作成
             var intent: Intent = Intent(this, SecondActivity::class.java)
+
+            //画面遷移
             startActivity(intent)
         }
 
